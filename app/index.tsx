@@ -1,8 +1,11 @@
-import { useState } from 'react';
-import Splash from "./src/screens/splash";
-export default function App( ) {
-  const[showSplah, setShowSplah] = useState(true);
-  if (showSplah){
-    return <Splash onFinish={() => setShowSplah(false)}/>
+import { useState } from "react";
+import Splash from "./src/screens/Splash";
+
+export default function App(){
+  const [showSplash, setShowSplash]= useState(true);
+
+  if(showSplash){
+    return <Splash onFinish={()=> setShowSplash(false)}/>
+  }
+}
   
-  }}
