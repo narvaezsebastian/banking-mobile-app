@@ -16,7 +16,7 @@ const Splash = ({onFinish}:{onFinish:()=>void}) =>{
     return (
         <View style ={styles.container}>
             <Image
-            source={require('../assets/images/cafe.png')}
+            source={require('../assets/images/adidas.png')}
             resizeMode='contain'
             />
         </View>
