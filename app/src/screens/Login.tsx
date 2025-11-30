@@ -97,11 +97,11 @@ const Login: React.FC<LoginProps> = ({ onNavigateToRegister }) => {
           <Text style={styles.title}>Iniciar Sesión</Text>
 
           <View style={styles.inputWrap}>
-            <Text style={styles.label}>Email</Text>
+            <Text style={styles.label}>Gmail</Text>
             <TextInput
               value={email}
               onChangeText={setEmail}
-              placeholder="jane@example.com"
+              placeholder="Escribe tu correo electronico"
               placeholderTextColor="#FFFFFF99"
               keyboardType="email-address"
               autoCapitalize="none"
@@ -123,7 +123,7 @@ const Login: React.FC<LoginProps> = ({ onNavigateToRegister }) => {
             <TextInput
               value={password}
               onChangeText={setPassword}
-              placeholder="••••••••"
+              placeholder="Escribe tu contraseña"
               placeholderTextColor="#FFFFFF99"
               secureTextEntry
               style={[styles.input, { borderColor: inputBorderColor('password') }]}

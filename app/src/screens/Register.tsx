@@ -120,7 +120,7 @@ const Register: React.FC<RegisterProps> = ({ onNavigateToLogin }) => {
               <TextInput
                 value={firstname}
                 onChangeText={setFirstname}
-                placeholder="Juan"
+                placeholder="Escribe tu nombre"
                 autoCapitalize="words"
                 style={styles.input}
               />
@@ -131,7 +131,7 @@ const Register: React.FC<RegisterProps> = ({ onNavigateToLogin }) => {
               <TextInput
                 value={lastname}
                 onChangeText={setLastname}
-                placeholder="Pérez"
+                placeholder="Escribe tu apellido"
                 autoCapitalize="words"
                 style={styles.input}
               />
@@ -143,7 +143,7 @@ const Register: React.FC<RegisterProps> = ({ onNavigateToLogin }) => {
             <TextInput
               value={mobile}
               onChangeText={setMobile}
-              placeholder="3005998866"
+              placeholder="Escribe tu numero de telefono o WhatsApp"
               keyboardType="phone-pad"
               style={styles.input}
             />
@@ -154,7 +154,7 @@ const Register: React.FC<RegisterProps> = ({ onNavigateToLogin }) => {
             <TextInput
               value={email}
               onChangeText={setEmail}
-              placeholder="juan@mail.com"
+              placeholder="Escribe tu correo electronico"
               keyboardType="email-address"
               autoCapitalize="none"
               autoCorrect={false}
@@ -167,7 +167,7 @@ const Register: React.FC<RegisterProps> = ({ onNavigateToLogin }) => {
             <TextInput
               value={password}
               onChangeText={setPassword}
-              placeholder="••••••••"
+              placeholder="Escribe tu contraseña"
               secureTextEntry
               style={styles.input}
             />
@@ -178,7 +178,7 @@ const Register: React.FC<RegisterProps> = ({ onNavigateToLogin }) => {
             <TextInput
               value={confirm}
               onChangeText={setConfirm}
-              placeholder="••••••••"
+              placeholder="Confirme su contraseña"
               secureTextEntry
               style={styles.input}
             />
@@ -221,7 +221,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#111827',
     borderRadius: 16,
     padding: 20,
-    shadowColor: '#000',
+    shadowColor: '#fff8f8ff',
     shadowOpacity: 0.2,
     shadowRadius: 12,
     shadowOffset: { width: 0, height: 6 },
@@ -242,7 +242,7 @@ const styles = StyleSheet.create({
     marginVertical: 6,
   },
   label: {
-    color: '#cbd5e1',
+    color: '#ffffffff',
     marginBottom: 6,
   },
   input: {
@@ -267,11 +267,11 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   helper: {
-    color: '#9ca3af',
+    color: '#cdd1d8ff',
     textAlign: 'center',
   },
   helperSmall: {
-    color: '#9ca3af',
+    color: '#bcc1c9ff',
     textAlign: 'center',
     marginTop: 12,
     fontSize: 12,
